@@ -85,7 +85,7 @@ function drawBoxes(objects) {
         }
 
         drawCtx.fillText(object.class_name + " - " + Math.round(object.score * 100) + "%", x + 5, y + 10);
-	if(object.class_name=="person"){
+	if(object.class_name=="nine"){
 
        let gltfLoader = new THREE.GLTF2Loader();
 		gltfLoader.load("static/ar-demos/src/obj/lapras/lapras" + ".gltf", ( gltf) => {
@@ -109,12 +109,116 @@ function drawBoxes(objects) {
 		canvas.style.display = "block";
               
         }
+        if(object.class_name=="ten"){
+
+       let gltfLoader = new THREE.GLTF2Loader();
+		gltfLoader.load("static/ar-demos/src/obj/bulbasaur/bulbasaur" + ".gltf", ( gltf) => {
+			// set position?
+			gltf.name = "bulbasaur";
+			gltf.scene.scale.set( 2, 2, 2);
+			gltf.scene.rotation.set(0, 0, 0);
+			gltf.scene.position.set(0,0,-30);
+			// masterball has 100% catch rate
+			renderer.render(scene, camera);
+				scene.add( gltf.scene );
+			
+		},( xhr ) => {
+		console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+		},
+	  ( error ) =>{
+				console.warn("Failed to load " + error);
+			}
+		);
+		if(object.class_name=="eleven"){
+
+       let gltfLoader = new THREE.GLTF2Loader();
+		gltfLoader.load("static/ar-demos/src/obj/charmander/charmander" + ".gltf", ( gltf) => {
+			// set position?
+			gltf.name = "charmander";
+			gltf.scene.scale.set( 2, 2, 2);
+			gltf.scene.rotation.set(0, 0, 0);
+			gltf.scene.position.set(0,0,-30);
+			// masterball has 100% catch rate
+			renderer.render(scene, camera);
+				scene.add( gltf.scene );
+			
+		},( xhr ) => {
+		console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+		},
+	  ( error ) =>{
+				console.warn("Failed to load " + error);
+			}
+		);
+			if(object.class_name=="twelve"){
+
+       let gltfLoader = new THREE.GLTF2Loader();
+		gltfLoader.load("static/ar-demos/src/obj/magikarp/magikarp" + ".gltf", ( gltf) => {
+			// set position?
+			gltf.name = "magikarp";
+			gltf.scene.scale.set( 2, 2, 2);
+			gltf.scene.rotation.set(0, 0, 0);
+			gltf.scene.position.set(0,0,-30);
+			// masterball has 100% catch rate
+			renderer.render(scene, camera);
+				scene.add( gltf.scene );
+			
+		},( xhr ) => {
+		console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+		},
+	  ( error ) =>{
+				console.warn("Failed to load " + error);
+			}
+		);
+				if(object.class_name=="thirteen"){
+
+       let gltfLoader = new THREE.GLTF2Loader();
+		gltfLoader.load("static/ar-demos/src/obj/pikachu/pikachu" + ".gltf", ( gltf) => {
+			// set position?
+			gltf.name = "pikachu";
+			gltf.scene.scale.set( 2, 2, 2);
+			gltf.scene.rotation.set(0, 0, 0);
+			gltf.scene.position.set(0,0,-30);
+			// masterball has 100% catch rate
+			renderer.render(scene, camera);
+				scene.add( gltf.scene );
+			
+		},( xhr ) => {
+		console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+		},
+	  ( error ) =>{
+				console.warn("Failed to load " + error);
+			}
+		);
+				if(object.class_name=="ace"){
+
+       let gltfLoader = new THREE.GLTF2Loader();
+		gltfLoader.load("static/ar-demos/src/obj/squirtle/squirtle" + ".gltf", ( gltf) => {
+			// set position?
+			gltf.name = "squirtle";
+			gltf.scene.scale.set( 2, 2, 2);
+			gltf.scene.rotation.set(0, 0, 0);
+			gltf.scene.position.set(0,0,-30);
+			// masterball has 100% catch rate
+			renderer.render(scene, camera);
+				scene.add( gltf.scene );
+			
+		},( xhr ) => {
+		console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+		},
+	  ( error ) =>{
+				console.warn("Failed to load " + error);
+			}
+		);
+		
+		animate();
+		canvas.style.display = "block";
+              
+        }
         
         drawCtx.strokeRect(x, y, width, height);
 
     });
 }
-
 
  function animate() {
   	requestAnimationFrame(animate);
