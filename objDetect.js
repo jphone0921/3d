@@ -133,7 +133,7 @@ function drawBoxes(objects) {
 		canvas.style.display = "block";
               
         }
-		if(object.class_name=="eleven"){
+		if(object.class_name=="jack"){
 
        let gltfLoader = new THREE.GLTF2Loader();
 		gltfLoader.load("static/ar-demos/src/obj/charmander/charmander" + ".gltf", ( gltf) => {
@@ -157,7 +157,7 @@ function drawBoxes(objects) {
 		canvas.style.display = "block";
               
         }
-			if(object.class_name=="twelve"){
+			if(object.class_name=="queen"){
 
        let gltfLoader = new THREE.GLTF2Loader();
 		gltfLoader.load("static/ar-demos/src/obj/magikarp/magikarp" + ".gltf", ( gltf) => {
@@ -181,7 +181,7 @@ function drawBoxes(objects) {
 		canvas.style.display = "block";
               
         }
-				if(object.class_name=="thirteen"){
+				if(object.class_name=="king"){
 
        let gltfLoader = new THREE.GLTF2Loader();
 		gltfLoader.load("static/ar-demos/src/obj/pikachu/pikachu" + ".gltf", ( gltf) => {
