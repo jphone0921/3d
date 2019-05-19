@@ -153,6 +153,10 @@ function drawBoxes(objects) {
 				console.warn("Failed to load " + error);
 			}
 		);
+			animate();
+		canvas.style.display = "block";
+              
+        }
 			if(object.class_name=="twelve"){
 
        let gltfLoader = new THREE.GLTF2Loader();
