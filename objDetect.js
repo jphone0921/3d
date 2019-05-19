@@ -129,6 +129,10 @@ function drawBoxes(objects) {
 				console.warn("Failed to load " + error);
 			}
 		);
+		animate();
+		canvas.style.display = "block";
+              
+        }
 		if(object.class_name=="eleven"){
 
        let gltfLoader = new THREE.GLTF2Loader();
@@ -169,6 +173,10 @@ function drawBoxes(objects) {
 				console.warn("Failed to load " + error);
 			}
 		);
+				animate();
+		canvas.style.display = "block";
+              
+        }
 				if(object.class_name=="thirteen"){
 
        let gltfLoader = new THREE.GLTF2Loader();
@@ -189,6 +197,10 @@ function drawBoxes(objects) {
 				console.warn("Failed to load " + error);
 			}
 		);
+					animate();
+		canvas.style.display = "block";
+              
+        }
 				if(object.class_name=="ace"){
 
        let gltfLoader = new THREE.GLTF2Loader();
