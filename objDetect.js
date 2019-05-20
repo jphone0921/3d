@@ -92,8 +92,8 @@ function drawBoxes(objects) {
 			// set position?
 			gltf.name = "lapras";
 			gltf.scene.scale.set( 2, 2, 2);
-			gltf.scene.rotation.set(0, 0, 0);
-			gltf.scene.position.set(0,0,-30);
+			gltf.scene.rotation.set(0, 1.5, 0);
+			gltf.scene.position.set(-40,0,-30);
 			// masterball has 100% catch rate
 			renderer.render(scene, camera);
 				scene.add( gltf.scene );
@@ -115,9 +115,9 @@ function drawBoxes(objects) {
 		gltfLoader.load("static/ar-demos/src/obj/bulbasaur/bulbasaur" + ".gltf", ( gltf) => {
 			// set position?
 			gltf.name = "bulbasaur";
-			gltf.scene.scale.set( 2, 2, 2);
-			gltf.scene.rotation.set(0, 0, 0);
-			gltf.scene.position.set(0,0,-30);
+			gltf.scene.scale.set( 10, 10, 10);
+			gltf.scene.rotation.set(0, -1.5, 10);
+			gltf.scene.position.set(-40,0,-30);
 			// masterball has 100% catch rate
 			renderer.render(scene, camera);
 				scene.add( gltf.scene );
