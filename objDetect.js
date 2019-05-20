@@ -87,7 +87,7 @@ function drawBoxes(objects) {
         }
 
         drawCtx.fillText(object.class_name + " - " + Math.round(object.score * 100) + "%", x + 5, y + 10);
-	if(object.class_name=="nine"){
+	if(object.class_name=="King"){
        let gltfLoader = new THREE.GLTF2Loader();
 		gltfLoader.load("static/ar-demos/src/obj/lapras/lapras" + ".gltf", ( gltf) => {
 			// set position?
@@ -110,7 +110,7 @@ function drawBoxes(objects) {
 		canvas.style.display = "block";
               
         }
-        if(object.class_name=="ten"){
+        if(object.class_name=="General"){
 
        let gltfLoader = new THREE.GLTF2Loader();
 		gltfLoader.load("static/ar-demos/src/obj/bulbasaur/bulbasaur" + ".gltf", ( gltf) => {
@@ -134,7 +134,7 @@ function drawBoxes(objects) {
 		canvas.style.display = "block";
               
         }
-		if(object.class_name=="jack"){
+		if(object.class_name=="'Advisors"){
 
        let gltfLoader = new THREE.GLTF2Loader();
 		gltfLoader.load("static/ar-demos/src/obj/charmander/charmander" + ".gltf", ( gltf) => {
@@ -158,7 +158,7 @@ function drawBoxes(objects) {
 		canvas.style.display = "block";
               
         }
-	if(object.class_name=="queen"){
+	if(object.class_name=="Guards"){
 
        let gltfLoader = new THREE.GLTF2Loader();
 		gltfLoader.load("static/ar-demos/src/obj/magikarp/magikarp" + ".gltf", ( gltf) => {
@@ -182,7 +182,7 @@ function drawBoxes(objects) {
 		canvas.style.display = "block";
               
         }
-	if(object.class_name=="king"){
+	if(object.class_name=="Minister"){
 
        let gltfLoader = new THREE.GLTF2Loader();
 		gltfLoader.load("static/ar-demos/src/obj/pikachu/pikachu" + ".gltf", ( gltf) => {
@@ -206,7 +206,7 @@ function drawBoxes(objects) {
 		canvas.style.display = "block";
               
         }
-	if(object.class_name=="ace"){
+	if(object.class_name=="Elephant"){
 
        let gltfLoader = new THREE.GLTF2Loader();
 		gltfLoader.load("static/ar-demos/src/obj/squirtle/squirtle" + ".gltf", ( gltf) => {
