@@ -81,12 +81,13 @@ function drawBoxes(objects) {
 
         //flip the x axis if local video is mirrored
         if (mirror) {
+		
             x = drawCanvas.width - (x + width)
         }
 
         drawCtx.fillText(object.class_name + " - " + Math.round(object.score * 100) + "%", x + 5, y + 10);
 	if(object.class_name=="nine"){
-
+	pokeballEffects();
        let gltfLoader = new THREE.GLTF2Loader();
 		gltfLoader.load("static/ar-demos/src/obj/lapras/lapras" + ".gltf", ( gltf) => {
 			// set position?
@@ -110,7 +111,7 @@ function drawBoxes(objects) {
               
         }
         if(object.class_name=="ten"){
-
+	pokeballEffects();
        let gltfLoader = new THREE.GLTF2Loader();
 		gltfLoader.load("static/ar-demos/src/obj/bulbasaur/bulbasaur" + ".gltf", ( gltf) => {
 			// set position?
@@ -134,7 +135,7 @@ function drawBoxes(objects) {
               
         }
 		if(object.class_name=="jack"){
-
+	pokeballEffects();
        let gltfLoader = new THREE.GLTF2Loader();
 		gltfLoader.load("static/ar-demos/src/obj/charmander/charmander" + ".gltf", ( gltf) => {
 			// set position?
@@ -158,7 +159,7 @@ function drawBoxes(objects) {
               
         }
 			if(object.class_name=="queen"){
-
+	pokeballEffects();
        let gltfLoader = new THREE.GLTF2Loader();
 		gltfLoader.load("static/ar-demos/src/obj/magikarp/magikarp" + ".gltf", ( gltf) => {
 			// set position?
@@ -182,7 +183,7 @@ function drawBoxes(objects) {
               
         }
 				if(object.class_name=="king"){
-
+	pokeballEffects();
        let gltfLoader = new THREE.GLTF2Loader();
 		gltfLoader.load("static/ar-demos/src/obj/pikachu/pikachu" + ".gltf", ( gltf) => {
 			// set position?
@@ -206,7 +207,7 @@ function drawBoxes(objects) {
               
         }
 				if(object.class_name=="ace"){
-
+	pokeballEffects();
        let gltfLoader = new THREE.GLTF2Loader();
 		gltfLoader.load("static/ar-demos/src/obj/squirtle/squirtle" + ".gltf", ( gltf) => {
 			// set position?
@@ -269,6 +270,17 @@ function postFile(file) {
     };
     xhr.send(formdata);
 }
+
+function pokeballEffects() {
+		let image = document.getElementById("image");
+		canvas.style.display = "none";
+		image.style.display = "block";
+		setTimeout(()=> {
+			image.style.display = "none";
+			gMap.style.display = "block";
+			clearScene();
+		}, 2000);
+	}
 
 //Start object detection
 function startObjectDetection() {
